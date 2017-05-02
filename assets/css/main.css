@@ -6,6 +6,7 @@ body{
 label{
 	width: 100%;
 	display: inline-block;
+	margin-bottom: 3px;
 }
 input[type="text"]{
 	border: none;

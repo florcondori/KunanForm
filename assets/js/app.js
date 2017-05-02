@@ -17,13 +17,13 @@ window.addEventListener("load", function(){
 	guardar.addEventListener("click", function(e){
 		e.preventDefault();
 		for(var i=0; i<arrayInputFecha.length; i++){
-			if(!/(0[1-9]{1}|1[0-9]{1}|2[0-9]{1}|3[0-1]{1})\\(0[1-9]{1}|1[0-2]{1})\\((19|20)[0-9]{2})/.test(arrayInputFecha[i].value)){
+			if(/(0[1-9]{1}|1[0-9]{1}|2[0-9]{1}|3[0-1]{1})[\/]{1}(0[1-9]{1}|1[0-2]{1})[\/]((19|20)[0-9]{2})/.test(arrayInputFecha[i].value)){
+				continue;
+			}else{				
 				var pregunta = arrayInputFecha[i].previousElementSibling.innerHTML;
 				var mensaje = new MensajeError(pregunta,arrayInputFecha[i].value,"Tiene que tener este formato dd/mm/yyyy");
 				arrayMensajeError.push(mensaje);
 				console.log(arrayMensajeError);
-			}else{
-				continue;
 			}
 		}
 	});
