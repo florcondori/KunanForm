@@ -15,27 +15,31 @@
 			<h1>Formulario de Registro</h1>
 			<div id="datos-representante">
 				<h2>Datos del representante de la entidad postulante</h2>
-				<div class="mt5">
+				<div>
 					<div class="mb3">
 						<div class="divisiones">
 							<label>Apellidos</label>
-							<input type="text">
+							<input type="text" class="js-input-text">
 						</div>
 						<div class="divisiones">
 							<label>Nombres</label>
-							<input type="text">
+							<input type="text" class="js-input-text">
 						</div>
 					</div>
 					<div class="mb3">
 						<div class="divisiones">
 							<label>Fecha de Nacimiento(dd/mm/yyyy)</label>
-							<input type="text">
+							<input type="text" class="js-input-fecha">
 						</div>
 						<div class="divisiones">
 							<label>Edad</label>
 							<select id="select-edad">
 								<option value="25">25</option>
 								<option value="26">26</option>
+								<option value="27">27</option>
+								<option value="28">28</option>
+								<option value="29">29</option>
+								<option value="30">30</option>
 							</select>
 						</div>
 					</div>
@@ -107,25 +111,25 @@
 						<input type="checkbox" value="femenino" name="sexo">Femenino
 					</div>
 				</div>
-				<div class="mt5">
+				<div>
 					<div class="mb3">
 						<div class="divisiones">
 							<label>Profesión</label>
-							<input type="text">
+							<input type="text" class="js-input-text">
 						</div>
 						<div class="divisiones">
 							<label>Cargo en la organizacion</label>
-							<input type="text">
+							<input type="text" class="js-input-text">
 						</div>
 					</div>
 					<div class="mb3">
 						<div class="divisiones">
 							<label>Tiempo en dicho cargo en cantidad de meses</label>
-							<input type="text">
+							<input type="text" class="js-input-number">
 						</div>
 						<div class="divisiones">
 							<label>Tiempo en la organización en cantidad de meses</label>
-							<input type="text">
+							<input type="text" class="js-input-number">
 						</div>
 					</div>
 				</div>
@@ -136,11 +140,11 @@
 					<div class="divisiones">
 						<div class="mb3">
 							<label>Nombre de la entidad</label>
-							<input type="text">
+							<input type="text" class="js-input-text">
 						</div>
 						<div class="mb3">
 							<label>¿Cuando comenzaron a operar? (dd/mm/yyyy)</label>
-							<input type="text">
+							<input type="text" class="js-input-fecha">
 						</div>
 						<div class="mb3">
 							<label>Tipo de organización</label>
@@ -155,7 +159,7 @@
 						</div>
 						<div>
 							<label>Otros</label>
-							<input type="text">
+							<input type="text" class="js-input-text">
 						</div>
 					</div>
 					<div class="divisiones">
@@ -192,12 +196,12 @@
 						<p><em>Indicar las provincias en las que intervienen tu emprendimiento respecto a las regiones marcadas anteriormente.</em></p>
 						<div>
 							<label>Provincia</label>
-							<input type="text">
+							<input type="text" class="js-input-text">
 						</div>
 						<p><em>Indicar los distritos en las que intervienen tu emprendimiento respecto a las provincias marcadas anteriormente</em></p>
 						<div>
 							<label>Distrito</label>
-							<input type="text">
+							<input type="text" class="js-input-text">
 						</div>
 					</div>	
 				</div>
@@ -211,11 +215,11 @@
 						<p>Si responde “SÍ”, llena las siguientes opciones:</p>
 						<div class="mb3">					
 							<label>RUC</label>
-							<input type="text">
+							<input type="text" class="js-input-number" id="ruc">
 						</div>
 						<div class="mb3">					
 							<label>¿Cuándo se constituyeron? (dd/mm/yyyy)</label>
-							<input type="text" class="js-fecha">
+							<input type="text" class="js-input-fecha">
 						</div>
 					</div>
 				</div>
@@ -285,21 +289,21 @@
 					<div class="mb3">
 						<div class="divisiones">
 							<label>¿Cuánta gente se encarga de dirigir y gestionar la iniciativa?</label>
-							<input type="text">
+							<input type="text" class="js-input-number">
 						</div>
 						<div class="divisiones">
 							<label>Cantidad de Remunerados a tiempo parcial</label>
-							<input type="text">	
+							<input type="text" class="js-input-number">	
 						</div>
 					</div>
 					<div class="mb3">
 						<div class="divisiones">
 							<label>Cantidad de Remunerados a tiempo completo</label>
-							<input type="text">
+							<input type="text" class="js-input-number">
 						</div>
 						<div class="divisiones">
 							<label>Cantidad de Talento Voluntario</label>
-							<input type="text">
+							<input type="text" class="js-input-number">
 						</div>
 					</div>
 					<div class="mb3">
@@ -324,27 +328,27 @@
 				<div class="mb3">
 					<div class="divisiones">
 						<p><strong>Fuente de Financiamiento</strong></p>
-						<input type="checkbox" value="">He ganado uno o varios grants y/o capitales semilla<br>
-						<input type="checkbox" value="">Cuento con inversionistas privados<br>
-						<input type="checkbox" value="">Hago campañas de Crowdfunding<br>
-						<input type="checkbox" value="">He sido o estoy siendo incubado por una organización<br>
-						<input type="checkbox" value="">Una parte o todo es por la venta de mis productos o servicios<br>
-						<input type="checkbox" value="">Otros<br>
+						<input type="checkbox" value="1">He ganado uno o varios grants y/o capitales semilla<br>
+						<input type="checkbox" value="2">Cuento con inversionistas privados<br>
+						<input type="checkbox" value="3">Hago campañas de Crowdfunding<br>
+						<input type="checkbox" value="4">He sido o estoy siendo incubado por una organización<br>
+						<input type="checkbox" value="5">Una parte o todo es por la venta de mis productos o servicios<br>
+						<input type="checkbox" value="6">Otros<br>
 					</div>
 					<div class="divisiones">
 						<p><strong>Fondos administrados durante el año 2014</strong></p>
-						<input type="checkbox" value="" name="fondos"><= S/. 100,000<br>
-						<input type="checkbox" value="" name="fondos">S/. 100,001 – 200,000<br>
-						<input type="checkbox" value="" name="fondos">S/. 200,001 – 300,000<br>
-						<input type="checkbox" value="" name="fondos">S/. 300,001 – 400,000<br>
-						<input type="checkbox" value="" name="fondos">S/. 400,001 – 500,000<br>
-						<input type="checkbox" value="" name="fondos">>=S/. 500,001<br>
+						<input type="checkbox" value="1" name="fondos"><= S/. 100,000<br>
+						<input type="checkbox" value="2" name="fondos">S/. 100,001 – 200,000<br>
+						<input type="checkbox" value="3" name="fondos">S/. 200,001 – 300,000<br>
+						<input type="checkbox" value="4" name="fondos">S/. 300,001 – 400,000<br>
+						<input type="checkbox" value="5" name="fondos">S/. 400,001 – 500,000<br>
+						<input type="checkbox" value="6" name="fondos">>=S/. 500,001<br>
 					</div>					
 				</div>
 				<div class="mb3">
 					<div class="divisiones ocultar">
 						<label>Otras Fuentes de Financiamiento</label>
-						<input type="text">
+						<input type="text" class="js-input-text">
 					</div>
 					<div class="divisiones">
 						<label>Monto Exacto: S/. </label>
@@ -372,7 +376,7 @@
 				<div class="divisiones">
 					<div class="mb3">
 						<label>Página web (link)</label>
-						<input type="text">
+						<input type="text" id="web">
 					</div>
 					<div class="mb3">
 						<label>Fanpage (link):</label>
@@ -384,11 +388,11 @@
 					</div>
 					<div class="mb3">
 						<label>Teléfono Fijo</label>
-						<input type="text">
+						<input type="text" id="telefono">
 					</div>
 					<div class="mb3">
 						<label>Teléfono Celular</label>
-						<input type="text">
+						<input type="text" id="celular">
 					</div>
 					<div class="mb3">
 						<label>Correo Electrónico</label>
@@ -417,7 +421,7 @@
 					</div>
 					<div class="mb3">
 						<label>Si seleccionó otros medios</label>
-						<input type="text">
+						<input type="text" class="js-input-text">
 					</div>
 				</div>
 				<h3>Sube tu video a youtube de dos minutos y de producción simple en el que respondas a las siguientes preguntas:</h3>
@@ -443,7 +447,7 @@
 				<p>Por medio del presente formulario declaró a título personal y en representación de la organización que represento ante este Premio, que toda la información proporcionada para el Premio Kunan, es oficial, cierta y fidedigna. En tal sentido, autorizo a los organizadores del Premio para que en cualquier etapa del mismo extiendan cualquier consulta acerca de la información proveída y/o realicen la acción que estimen conveniente para la correcta verificación de los datos y antecedentes presentados. De presumirse de manera suficiente o se compruebe la falsedad y/o inexactitud de la información proveída por parte de nuestra Organización y/o de su representante oficial ante el Premio, se aceptamos que se proceda a la descalificación inmediata y a la anulación total de la postulación presentada. Dejamos expresa constancia que conocemos, respetamos y aceptamos las Bases y lineamientos del Premio Kunan organizado por Telefónica del Perú y Global Shapers Lima Hub.</p>
 				<div>
 					<p>Acepto la declaración</p>
-					<input type="checkbox" name="">
+					<input type="checkbox" name="" id="check-dj">
 				</div>
 			</div>
 			<div>
@@ -451,7 +455,7 @@
 				<p>He llenado todos los campos del formulario y quiero enviarla para concretar la postulación con éxito. <strong>Recuerda: Al marcar este campo tu postulación no podrá ser editada nuevamente.</strong></p>
 				<div>
 					<p>Quiero enviar mi aplicación</p>
-					<input type="checkbox" name="">					
+					<input type="checkbox" name="" id="check-enviar">					
 				</div>
 			</div>
 			<div class="text-center">
