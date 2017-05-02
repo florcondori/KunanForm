@@ -134,15 +134,15 @@
 				<h2>Datos de la entidad postulante</h2>
 				<div>
 					<div class="divisiones">
-						<div>
+						<div class="mb3">
 							<label>Nombre de la entidad</label>
 							<input type="text">
 						</div>
-						<div>
+						<div class="mb3">
 							<label>¿Cuando comenzaron a operar? (dd/mm/yyyy)</label>
 							<input type="text">
 						</div>
-						<div>
+						<div class="mb3">
 							<label>Tipo de organización</label>
 							<select id="tipo-organizacion">
 								<option value="ong">ONG</option>
@@ -209,11 +209,11 @@
 					</div>
 					<div class="divisiones">
 						<p>Si responde “SÍ”, llena las siguientes opciones:</p>
-						<div>					
+						<div class="mb3">					
 							<label>RUC</label>
 							<input type="text">
 						</div>
-						<div>					
+						<div class="mb3">					
 							<label>¿Cuándo se constituyeron? (dd/mm/yyyy)</label>
 							<input type="text" class="js-fecha">
 						</div>
@@ -282,7 +282,7 @@
 				<h3>Recursos humanos</h3>
 				<p><em>Pueden indicar cero " 0 " si no tienen una cantidad.</em></p>
 				<div>
-					<div>
+					<div class="mb3">
 						<div class="divisiones">
 							<label>¿Cuánta gente se encarga de dirigir y gestionar la iniciativa?</label>
 							<input type="text">
@@ -292,9 +292,9 @@
 							<input type="text">	
 						</div>
 					</div>
-					<div>
-						<div>
-							<label class="divisiones">Cantidad de Remunerados a tiempo completo</label>
+					<div class="mb3">
+						<div class="divisiones">
+							<label>Cantidad de Remunerados a tiempo completo</label>
 							<input type="text">
 						</div>
 						<div class="divisiones">
@@ -302,7 +302,7 @@
 							<input type="text">
 						</div>
 					</div>
-					<div>
+					<div class="mb3">
 						<div class="divisiones">
 							<label>Otro</label>
 							<input type="text">
@@ -321,25 +321,27 @@
 					</div>
 				</div>
 				<h3>Seleccione una o más opciones que describan cómo está financiando su organización.</h3>
-				<div>
-					<p><strong>Fuente de Financiamiento</strong></p>
-					<input type="checkbox" value="">He ganado uno o varios grants y/o capitales semilla<br>
-					<input type="checkbox" value="">Cuento con inversionistas privados<br>
-					<input type="checkbox" value="">Hago campañas de Crowdfunding<br>
-					<input type="checkbox" value="">He sido o estoy siendo incubado por una organización<br>
-					<input type="checkbox" value="">Una parte o todo es por la venta de mis productos o servicios<br>
-					<input type="checkbox" value="">Otros<br>
+				<div class="mb3">
+					<div class="divisiones">
+						<p><strong>Fuente de Financiamiento</strong></p>
+						<input type="checkbox" value="">He ganado uno o varios grants y/o capitales semilla<br>
+						<input type="checkbox" value="">Cuento con inversionistas privados<br>
+						<input type="checkbox" value="">Hago campañas de Crowdfunding<br>
+						<input type="checkbox" value="">He sido o estoy siendo incubado por una organización<br>
+						<input type="checkbox" value="">Una parte o todo es por la venta de mis productos o servicios<br>
+						<input type="checkbox" value="">Otros<br>
+					</div>
+					<div class="divisiones">
+						<p><strong>Fondos administrados durante el año 2014</strong></p>
+						<input type="checkbox" value="" name="fondos"><= S/. 100,000<br>
+						<input type="checkbox" value="" name="fondos">S/. 100,001 – 200,000<br>
+						<input type="checkbox" value="" name="fondos">S/. 200,001 – 300,000<br>
+						<input type="checkbox" value="" name="fondos">S/. 300,001 – 400,000<br>
+						<input type="checkbox" value="" name="fondos">S/. 400,001 – 500,000<br>
+						<input type="checkbox" value="" name="fondos">>=S/. 500,001<br>
+					</div>					
 				</div>
-				<div>
-					<p><strong>Fondos administrados durante el año 2014</strong></p>
-					<input type="checkbox" value="" name="fondos"><= S/. 100,000<br>
-					<input type="checkbox" value="" name="fondos">S/. 100,001 – 200,000<br>
-					<input type="checkbox" value="" name="fondos">S/. 200,001 – 300,000<br>
-					<input type="checkbox" value="" name="fondos">S/. 300,001 – 400,000<br>
-					<input type="checkbox" value="" name="fondos">S/. 400,001 – 500,000<br>
-					<input type="checkbox" value="" name="fondos">>=S/. 500,001<br>
-				</div>
-				<div>
+				<div class="mb3">
 					<div class="divisiones ocultar">
 						<label>Otras Fuentes de Financiamiento</label>
 						<input type="text">
@@ -365,30 +367,30 @@
 					<textarea></textarea>
 				</div>
 			</div>
-			<div>
+			<div id="informacion-complementaria">
 				<h2>Información complementaria</h2>
 				<div class="divisiones">
-					<div>
+					<div class="mb3">
 						<label>Página web (link)</label>
 						<input type="text">
 					</div>
-					<div>
+					<div class="mb3">
 						<label>Fanpage (link):</label>
 						<input type="text">
 					</div>
-					<div>
+					<div class="mb3">
 						<label>Twitter:</label>
 						<input type="text">
 					</div>
-					<div>
+					<div class="mb3">
 						<label>Teléfono Fijo</label>
 						<input type="text">
 					</div>
-					<div>
+					<div class="mb3">
 						<label>Teléfono Celular</label>
 						<input type="text">
 					</div>
-					<div>
+					<div class="mb3">
 						<label>Correo Electrónico</label>
 						<input type="text" id="email">
 					</div>
@@ -396,12 +398,12 @@
 				<div class="divisiones">
 					<p><em>Obligatorio al menos 1 foto.</em></p>
 					<p>Fotos de tu iniciativa</p>
-					<div>
-						<button>Choose File</button><input type="text" placeholder="No file chosen">
-						<button>Choose File</button><input type="text" placeholder="No file chosen">
-						<button>Choose File</button><input type="text" placeholder="No file chosen">
+					<div class="mb3">
+						<button>Choose File</button><span>No file chosen</span><br>
+						<button>Choose File</button><span>No file chosen</span><br>
+						<button>Choose File</button><span>No file chosen</span>
 					</div>
-					<div>
+					<div class="mb3">
 						<label>¿Por qué medio te enteraste de la convocatoria?</label>
 						<input type="checkbox" value="amigo" name="medio-comunicacion">Amigo<br>	
 						<input type="checkbox" value="web" name="medio-comunicacion">Web<br>	
@@ -456,18 +458,18 @@
 			<p>Encuentra información en el <a href="">glosario de términos</a></p>
 		</div>
 		<footer>
-			<div>
-				<p>Kunan</p>
-				<p>Premios</p>
-				<p>Comunidad</p>
-				<p>Comunicaciones</p>
+			<div class="divisiones">
+				<p class="text-normal">Kunan</p>
+				<p class="text-small">Premios</p>
+				<p class="text-small">Comunidad</p>
+				<p class="text-small">Comunicaciones</p>
 			</div>
-			<div>
-				<p>Siguenos</p>
-				<a href=""></a>
-				<a href=""></a>
-				<a href=""></a>
-				<a href=""></a>
+			<div class="divisiones">
+				<p class="text-normal">Siguenos</p>
+				<a href="#" class="icon"><img src="assets/img/Facebook.png"></a>
+				<a href="#" class="icon"><img src="assets/img/Instagram.png"></a>
+				<a href="#" class="icon"><img src="assets/img/twitter.png"></a>
+				<a href="#" class="icon"><img src="assets/img/youtube.png"></a>
 			</div>
 		</footer>
 		<script type="text/javascript" src="assets/js/app.js"></script>

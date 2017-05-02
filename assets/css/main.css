@@ -14,12 +14,22 @@ input[type="text"]{
 }
 textarea{
 	width: 100%;
-	height: 70px;
+	height: 100px;
+}
+a{
+	text-decoration: none;
+	color: #FF4000;
 }
 footer{
 	background: #3E3F40;
 	box-sizing: border-box;
 	width: 100%;
+	color: white;
+	padding: 5% 10%;
+}
+img{
+	width: 100%;
+	height: 100%;
 }
 .contenido-general{
 	margin: 10%;
@@ -30,6 +40,12 @@ footer{
 .mt5{
 	margin-top: 5%;
 }
+.text-small{
+	font-size: 10px;
+}
+.text-normal{
+	font-size: 24px;
+}
 .divisiones{
 	box-sizing: border-box;
 	display: inline-block;
@@ -37,6 +53,22 @@ footer{
 	height: auto;
 	padding-right: 8%;
 }
+.icon{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin-left: 7px;
+}
+
 .ocultar{
 	display: none;
+}
+#guardar{
+	background: #FF4000;
+	color: white;
+	padding: 10px 15px;
+	border: none;
+}
+#guardar+p{
+	text-align: right;
 }
