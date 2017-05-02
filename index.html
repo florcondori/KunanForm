@@ -2,60 +2,222 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 		<link rel="stylesheet" href="assets/css/main.css">
 		<title>Kunan Form</title>
 	</head>
 	<body>
-		<div>
+		<div class="contenido-general">
 			<div>
 				<p>Antes de iniciar la inscripción debes leer las <a href="#">bases del cncurso</a></p>
 				<p><strong>Nota: </strong>Al finalizar el formulario encontrarás el icono GUARDAR, el cual permitira que puedas guardar la informacion ingresada si no culminastes el formulario, dándote la posibilidad de entrar cuando necesites concretar y/o editar antes de eligir el icono ENVIAR</p>
 			</div>
 			<h1>Formulario de Registro</h1>
-			<div id="Datos-Representante">
+			<div id="datos-representante">
 				<h2>Datos del representante de la entidad postulante</h2>
-				<div>
-					<div>
-						<div>
+				<div class="mt5">
+					<div class="mb3">
+						<div class="divisiones">
 							<label>Apellidos</label>
 							<input type="text">
 						</div>
-						<div>
+						<div class="divisiones">
 							<label>Nombres</label>
 							<input type="text">
 						</div>
 					</div>
-					<div>
-						<div>
+					<div class="mb3">
+						<div class="divisiones">
 							<label>Fecha de Nacimiento(dd/mm/yyyy)</label>
 							<input type="text">
 						</div>
-						<div>
+						<div class="divisiones">
 							<label>Edad</label>
-							<select id="edad">
-							<option>25</option>
-							<option>26</option>
+							<select id="select-edad">
+								<option value="25">25</option>
+								<option value="26">26</option>
 							</select>
 						</div>
 					</div>
-					<div>
-						<div>
+					<div class="mb3">
+						<div class="divisiones">
 							<label>Region de Nacimiento</label>
-							<select>
-								<option>Amazonas</option>
-								<option>Áncash</option>
-								<option>Apurimac</option>
+							<select id="region-nacimiento">
+								<option value="amazonas">Amazonas</option>
+								<option value="ancash">Áncash</option>
+								<option value="apurimac">Apurimac</option>
+								<option value="arequipa">Arequipa</option>
+								<option value="ayacucho">Ayacucho</option>
+								<option value="cajamarca">Cajamarca</option>
+								<option value="callao">Callao</option>
+								<option value="cuzco">Cuzco</option>
+								<option value="huancavelica">Huancavelica</option>
+								<option value="huanuco">Huánuco</option>
+								<option value="ica">Ica</option>
+								<option value="junin">Junín</option>
+								<option value="la libertad">La Libertad</option>
+								<option value="lambayeque">Lambayeque</option>
+								<option value="lima">Lima</option>
+								<option value="loreto">Loreto</option>
+								<option value="madre de dios">Madre de Dios</option>
+								<option value="moquegua">Moquegua</option>
+								<option value="pasco">Pasco</option>
+								<option value="piura">Piura</option>
+								<option value="puno">Puno</option>
+								<option value="san martin">San Martín</option>
+								<option value="tacna">Tacna</option>
+								<option value="tumbes">Tumbes</option>
+								<option value="ucayali">Ucayali</option>
 							</select>
 						</div>
-						<div>
-							<label>Edad</label>
-							<select id="edad">
-							<option>25</option>
-							<option>26</option>
+						<div class="divisiones">
+							<label>Region de Residencia</label>
+							<select id="region-residencia">
+								<option value="amazonas">Amazonas</option>
+								<option value="ancash">Áncash</option>
+								<option value="apurimac">Apurimac</option>
+								<option value="arequipa">Arequipa</option>
+								<option value="ayacucho">Ayacucho</option>
+								<option value="cajamarca">Cajamarca</option>
+								<option value="callao">Callao</option>
+								<option value="cuzco">Cuzco</option>
+								<option value="huancavelica">Huancavelica</option>
+								<option value="huanuco">Huánuco</option>
+								<option value="ica">Ica</option>
+								<option value="junin">Junín</option>
+								<option value="la libertad">La Libertad</option>
+								<option value="lambayeque">Lambayeque</option>
+								<option value="lima">Lima</option>
+								<option value="loreto">Loreto</option>
+								<option value="madre de dios">Madre de Dios</option>
+								<option value="moquegua">Moquegua</option>
+								<option value="pasco">Pasco</option>
+								<option value="piura">Piura</option>
+								<option value="puno">Puno</option>
+								<option value="san martin">San Martín</option>
+								<option value="tacna">Tacna</option>
+								<option value="tumbes">Tumbes</option>
+								<option value="ucayali">Ucayali</option>
 							</select>
 						</div>
 					</div>
-					
+					<div class="mb3">
+						<label>Sexo</label>
+						<input type="checkbox" value="masculino" name="sexo">Masculino<br>
+						<input type="checkbox" value="femenino" name="sexo">Femenino
+					</div>
+				</div>
+				<div class="mt5">
+					<div class="mb3">
+						<div class="divisiones">
+							<label>Profesión</label>
+							<input type="text">
+						</div>
+						<div class="divisiones">
+							<label>Cargo en la organizacion</label>
+							<input type="text">
+						</div>
+					</div>
+					<div class="mb3">
+						<div class="divisiones">
+							<label>Tiempo en dicho cargo en cantidad de meses</label>
+							<input type="text">
+						</div>
+						<div class="divisiones">
+							<label>Tiempo en la organización en cantidad de meses</label>
+							<input type="text">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="datos-entidad">
+				<h2>Datos de la entidad postulante</h2>
+				<div>
+					<div class="divisiones">
+						<div>
+							<label>Nombre de la entidad</label>
+							<input type="text">
+						</div>
+						<div>
+							<label>¿Cuando comenzaron a operar? (dd/mm/yyyy)</label>
+							<input type="text">
+						</div>
+						<div>
+							<label>Tipo de organización</label>
+							<select id="tipo-organizacion">
+								<option value="ong">ONG</option>
+								<option value="fundaciones">Fundaciones</option>
+								<option value="asociacion civil">Asociación Civil</option>
+								<option value="empresa">Empresa</option>
+								<option value="persona natural">Persona Natural</option>
+								<option value="otros">otros</option>
+							</select>
+						</div>
+						<div>
+							<label>Otros</label>
+							<input type="text">
+						</div>
+					</div>
+					<div class="divisiones">
+						<p>Ámbito de intervención:</p>
+						<p>¿Cuáles son las regiones, provincias y distritos donde se situan sus operaciones a lo largo de  toda la cadena del negocio?</p>
+						<div>
+							<label>Regiones</label>
+							<input type="checkbox" value="amazonas">Amazonas<br>
+							<input type="checkbox" value="ancash">Áncash<br>
+							<input type="checkbox" value="apurimac">Apurímac<br>
+							<input type="checkbox" value="arequipa">Arequipa<br>
+							<input type="checkbox" value="ayacucho">Ayacucho<br>
+							<input type="checkbox" value="cajamarca">Cajamarca<br>
+							<input type="checkbox" value="callao">Callao<br>
+							<input type="checkbox" value="cuzco">Cuzco<br>
+							<input type="checkbox" value="huancavelica">Huancavelica<br>
+							<input type="checkbox" value="huanuco">Huánuco<br>
+							<input type="checkbox" value="ica">Ica<br>
+							<input type="checkbox" value="junin">Junín<br>
+							<input type="checkbox" value="la libertad">La Libertad<br>
+							<input type="checkbox" value="lambayeque">Lambayeque<br>
+							<input type="checkbox" value="lima">Lima<br>
+							<input type="checkbox" value="loreto">Loreto<br>
+							<input type="checkbox" value="madre de dios">Madre de Dios<br>
+							<input type="checkbox" value="moquegua">Moquegua<br>
+							<input type="checkbox" value="pasco">Pasco<br>
+							<input type="checkbox" value="piura">Piura<br>
+							<input type="checkbox" value="puno">Puno<br>
+							<input type="checkbox" value="san martin">San Martín<br>
+							<input type="checkbox" value="tacna">Tacna<br>
+							<input type="checkbox" value="tumbes">Tumbes<br>
+							<input type="checkbox" value="ucayali">Ucayali<br>
+						</div>
+						<p><em>Indicar las provincias en las que intervienen tu emprendimiento respecto a las regiones marcadas anteriormente.</em></p>
+						<div>
+							<label>Provincia</label>
+							<input type="text">
+						</div>
+						<p><em>Indicar los distritos en las que intervienen tu emprendimiento respecto a las provincias marcadas anteriormente</em></p>
+						<div>
+							<label>Distrito</label>
+							<input type="text">
+						</div>
+					</div>	
+				</div>
+				<div>
+					<div class="divisiones">
+						<label>¿Está inscrita en Registros Públicos?</label>
+						<input type="checkbox" value="si" name="check">Si<br>
+						<input type="checkbox" value="no" name="check">No<br>
+					</div>
+					<div class="divisiones">
+						<p>Si responde “SÍ”, llena las siguientes opciones:</p>
+						<div>					
+							<label>RUC</label>
+							<input type="text">
+						</div>
+						<div>					
+							<label>¿Cuándo se constituyeron? (dd/mm/yyyy)</label>
+							<input type="text" class="js-fecha">
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
